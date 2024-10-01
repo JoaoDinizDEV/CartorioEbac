@@ -129,7 +129,8 @@ int main ()
 	    printf("Escolha a opção desejada do menu: \n\n");
 	    printf("\t1- Registrar nomes \n");
 	    printf("\t2- Consultar os nomes \n");
-	    printf("\t3- Deletar os nomes \n\n");
+	    printf("\t3- Deletar os nomes\n");
+	    printf("\t4- Retornar ao menu\n");
 	    printf("Opção: ");//Fim do menu
 	
 	    scanf("%d", &opcao); //Armazenando a escolha do usuario 
@@ -148,6 +149,11 @@ int main ()
 		
 		    case 3:
 			deletar(); //chamada da função deletar 
+		    break;
+		    
+		    case 4:
+		    printf("Obrigado por acessar o sistema EBAC!\n");
+		    return 0;
 		    break;
 		    
 		    default: 
